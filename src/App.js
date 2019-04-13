@@ -1,25 +1,23 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { Route } from 'react-router-dom';
 import './App.css';
+import { NavBar } from './app/common/nav-bar';
+import Exercise from './app/exercise/main';
+import CSS3 from './app/exercise/css3/main';
+import OfficialDoc from './app/exercise/official-doc/main';
+import FM from './app/fm/main';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div>
+        <NavBar />
+
+        <Route path="/exercise" exact component={Exercise} />
+        <Route path="/exercise/css3" component={CSS3} />
+        <Route path="/exercise/official-doc" component={OfficialDoc} />
+        <Route path="/fm" component={FM} />
+
       </div>
     );
   }

@@ -1,0 +1,24 @@
+.navbar {
+    background-color: #545652;
+    line-height: 1.75;
+    margin: -1rem -1rem 0;
+}
+
+.navbar>a {
+    display: inline-block;
+    min-width: 2rem;
+    color: #d5d5d5;
+    margin: 0 0.5rem;
+    text-decoration: none;
+    font-size: 0.75rem;
+    vertical-align: text-top;
+}
+
+.navbar>a:first-child {
+    margin-left: 0.75rem;
+}
+
+.navbar>a:hover,
+.navbar>a.active-link {
+    color: #ffffff;
+}
