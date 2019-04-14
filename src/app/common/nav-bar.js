@@ -12,7 +12,7 @@ class NavBar extends React.Component {
 
     render() {
         return (
-            <nav class="navbar">
+            <nav className="navbar">
                 <Link to="/">FM</Link>
                 <Link to="/exercise">练习</Link>
                 <Link to="/fm">DEMO</Link>
