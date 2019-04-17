@@ -535,3 +535,262 @@ div.none-border {
     justify-content: center;
     align-items: center;
 }
+
+.button {
+    display: inline-block;
+    min-width: 5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.2rem;
+    text-decoration: none;
+    margin: 0.5rem;
+    text-align: center;
+    background-color: green;
+    color: white;
+    font-size: 0.8rem;
+    line-height: 1;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.button>span {
+    transition: .5s;
+    position: relative;
+    display: inline-block;
+}
+
+.button>span:after {
+    content: '»';
+    opacity: 0;
+    transition: .5s;
+    position: absolute;
+    top: 0;
+    right: -1rem;
+}
+
+.button:hover>span {
+    padding-right: .8rem;
+}
+
+.button:hover>span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.disabled {
+    opacity: .6;
+    cursor: not-allowed;
+    /* filter: grayscale(100%); */
+    outline: none;
+}
+
+.wave-button {
+    display: inline-block;
+    min-width: 5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.2rem;
+    text-decoration: none;
+    margin: 0.5rem;
+    text-align: center;
+    background-color: green;
+    color: white;
+    font-size: 0.8rem;
+    line-height: 1;
+    cursor: pointer;
+    transition: all .4s;
+    overflow: hidden;
+    position: relative;
+}
+
+.wave-button:after {
+    content: '';
+    position: absolute;
+    display: block;
+    background: #90EE90;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 1.5s;
+}
+
+/* 按钮被点击时触发 active 此时 after 瞬间缩小到 0x0 大小，透明度变为 1; 而 active 被点击后立即结束，此时会过渡到普通状态，active 大小远大于 wave-button, 但是 overflow:hidden 所以超出按钮区域的内容会被隐藏，透明度从 1 将为 0，用时 1.5s */
+.wave-button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s;
+}
+
+.press-button {
+    display: inline-block;
+    min-width: 5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 1rem;
+    text-decoration: none;
+    margin: 0.5rem;
+    text-align: center;
+    background-color: #4caf50;
+    color: white;
+    font-size: 0.8rem;
+    line-height: 1;
+    cursor: pointer;
+    transition: all .4s;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 5px #999;
+    outline: none;
+}
+
+.press-button:hover {
+    background-color: #3e8e41;
+}
+
+.press-button:active {
+    background: #3e8e41;
+    box-shadow: 0 1px #999;
+    transform: translateY(0.25rem);
+}
+
+ul.simple-pagination {
+    list-style-type: none;
+    text-align: center;
+}
+
+ul.simple-pagination li {
+    display: inline-block;
+    min-width: 1rem;
+    padding: 0.5rem;
+    transition: background-color .3s;
+    border-left: 1px solid #4caf50;
+    border-top: 1px solid #4caf50;
+    border-bottom: 1px solid #4caf50;
+    box-sizing: border-box;
+}
+
+ul.simple-pagination li:hover:not(.active) {
+    background-color: #e4e4e4;
+}
+
+ul.simple-pagination li:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+ul.simple-pagination li:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-right: 1px solid #4caf50;
+}
+
+ul.simple-pagination li a {
+    padding: 0.5rem;
+    text-decoration: none;
+    color: inherit;
+}
+
+.simple-pagination .active {
+    background-color: #4caf50;
+    color: white;
+    transition: background-color .3s;
+}
+
+.simple-pagination .active:hover {
+    opacity: 0.5;
+}
+
+.breadcrumb {
+    display: block;
+    background-color: #eee;
+    border-radius: .5rem;
+}
+
+.breadcrumb li {
+    display: inline-block;
+    padding: .5rem 1rem;
+}
+
+.breadcrumb li a {
+    text-decoration: none;
+}
+
+.breadcrumb li+li:before {
+    content: '/\00a0';
+    color: inherit;
+    padding: .5rem;
+}
+
+.wrapper {
+    overflow: auto;
+}
+
+#main {
+    margin-left: 4px;
+}
+
+#leftsidebar {
+    float: none;
+    width: auto;
+}
+
+#menulist {
+    margin: 0;
+    padding: 0;
+}
+
+.menuitem {
+    background: #CDF0F6;
+    border: 1px solid #d4d4d4;
+    border-radius: 4px;
+    list-style-type: none;
+    margin: 4px;
+    padding: 2px;
+}
+
+@media screen and (min-width: 480px) {
+    #leftsidebar {
+        width: 200px;
+        float: left;
+    }
+
+    #main {
+        margin-left: 216px;
+    }
+}
+
+#media-example ul {
+    list-style-type: none;
+}
+
+#media-example ul li a {
+    text-decoration: none;
+    color: green;
+    display: block;
+}
+
+@media screen and (max-width: 699px) and (min-width: 520px), (min-width: 1151px) {
+    #media-example ul li a {
+        background: url(/assets/icons/mail.svg) left 0.5rem no-repeat;
+        padding-left: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 700px) {
+    #media-example ul li a:before {
+        content: 'Email: ';
+        font-style: italic;
+        color: #666666;
+    }
+}
+
+@media screen and (min-width: 1001px) {
+    #media-example ul li a:after {
+        content: "(" attr(data-email) ")";
+        font-style: italic;
+        font-size: 0.8rem;
+        color: #666666;
+    }
+}

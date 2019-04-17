@@ -10,6 +10,13 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /*  字体颜色  */
+  color: #333;
+
+  /* 行距 */
+  line-height: 1.75;
+
+  min-height: 420px;
 }
 
 code {
@@ -73,13 +80,13 @@ code {
 
 .Contacts {
   width: 100%;
-  height: 100%; 
+  height: 100%;
   background: lightblue;
 }
 
 .Chat {
   width: 100%;
-  height: 100%; 
+  height: 100%;
   background: pink;
 }
 
@@ -109,6 +116,6 @@ code {
   width: 25%;
 }
 
-.SearchBar>label{
+.SearchBar>label {
   display: block;
 }

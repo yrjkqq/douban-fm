@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable jsx-a11y/anchor-has-content */
 import React from 'react';
 import './main.css';
 
@@ -273,6 +275,76 @@ export default class CSS3 extends React.Component {
                             <span className="close" onClick={this.handleCloseModel}>X</span>
                             <img src="/assets/images/rock.jpg" alt="rock" width="600" height="400" />
                         </div>
+                    </div>
+                </div>
+                <div>
+                    <h3>按钮</h3>
+                    <div id="button">
+                        <button>按钮</button>
+                        <a href="" className="button">按钮</a>
+                        <button className="button"><span>按钮</span></button>
+                        <input className="button disabled" type="button" value="按钮" />
+                    </div>
+                    <div>
+                        <h6>波纹按钮</h6>
+                        <button className="wave-button">按钮</button>
+                    </div>
+                    <div>
+                        <h6>可按压按钮</h6>
+                        <button className="press-button">可按压按钮</button>
+                    </div>
+                </div>
+                <div>
+                    <h3>分页</h3>
+                    <div id="pagination">
+                        <ul className="simple-pagination">
+                            <li><a href="#">«</a></li>
+                            <li><a href="#">1</a></li>
+                            <li className="active"><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">6</a></li>
+                            <li><a href="#">7</a></li>
+                            <li><a href="#">»</a></li>
+                        </ul>
+                    </div>
+                    <h6>面包屑</h6>
+                    <div>
+                        <ul className="breadcrumb">
+                            <li><a href="#">首页 </a></li>
+                            <li><a href="#">前端 </a></li>
+                            <li><a href="#">HTML 教程 </a></li>
+                            <li>HTML 段落</li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <h3>多媒体查询</h3>
+                    <div className="wrapper">
+                        <div id="leftsidebar">
+                            <ul id="menulist">
+                                <li className="menuitem">Menu-item 1</li>
+                                <li className="menuitem">Menu-item 2</li>
+                                <li className="menuitem">Menu-item 3</li>
+                                <li className="menuitem">Menu-item 4</li>
+                                <li className="menuitem">Menu-item 5</li>
+                            </ul>
+                        </div>
+                        <div id="main">
+                            <h1>重置浏览器窗口查看效果！</h1>
+                            <p>在屏幕可视窗口尺寸大于 480 像素时将菜单浮动到页面左侧。</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3>多媒体查询示例</h3>
+                    <div id="media-example">
+                        <ul>
+                            <li><a data-email="qjy9002@163.com" href="mailto:qjy9002@163.com" target="_blank" rel="noopener noreferrer">send-email</a></li>
+                            <li><a data-email="qjy9002@163.com" href="mailto:qjy9002@163.com" target="_blank" rel="noopener noreferrer">send-email</a></li>
+                            <li><a data-email="qjy9002@163.com" href="mailto:qjy9002@163.com" target="_blank" rel="noopener noreferrer">send-email</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
