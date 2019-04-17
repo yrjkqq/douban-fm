@@ -1,9 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { NavBar } from '../common/nav-bar';
 
 export default function Exercise(props) {
     return (
         <div>
+            <NavBar />
             <h3>练习</h3>
             <ol>
                 <li>

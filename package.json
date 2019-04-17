@@ -25,5 +25,6 @@
   ],
   "devDependencies": {
     "react-router": "^5.0.0"
-  }
+  },
+  "proxy": "http://localhost:3030/"
 }

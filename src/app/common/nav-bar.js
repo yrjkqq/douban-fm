@@ -13,9 +13,9 @@ class NavBar extends React.Component {
     render() {
         return (
             <nav className="navbar">
-                <Link to="/">FM</Link>
+                <Link to="/fm">FM</Link>
                 <Link to="/exercise">练习</Link>
-                <Link to="/fm">DEMO</Link>
+                {/* <Link to="/fm">DEMO</Link> */}
             </nav>
         )
     }
