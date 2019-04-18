@@ -80,4 +80,4 @@
 ## tricks
 
 1. 解决跨域问题：create-my-app 创建的 package.json 文件中添加 ` "proxy": "http://localhost:3030/" ` 即可将 api 请求代理到 end 上，详见[官方指南](https://facebook.github.io/create-react-app/docs/proxying-api-requests-in-development)
-
+2. 鼠标滚动时间，使用 onWheel 事件， event.deltaY < 0 表示鼠标滚轮向前滚动

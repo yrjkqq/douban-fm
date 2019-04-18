@@ -1,0 +1,47 @@
+myhero {
+    display: block;
+    background-color: aliceblue;
+    padding: 2rem;
+}
+
+.html5>section {
+    border-bottom: 1px dotted green;
+}
+
+.canvas-example>div {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+}
+
+
+#div1 {
+    height: 300px;
+    width: 400px;
+    border: 1px solid green;
+    box-sizing: border-box;
+}
+
+@keyframes expand-img {
+    0% {
+        width: 300px;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+#div1 img {
+    animation: expand-img 1s;
+    animation-fill-mode: forwards;
+}
+
+/* #drag1:active {
+    width: 100%;
+}
+
+#drag1 {
+    width: 300px;
+    transition: width 1.4s;
+} */

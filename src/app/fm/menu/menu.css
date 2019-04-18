@@ -1,0 +1,23 @@
+.menu {
+    background-color: #ffffff;
+    line-height: 1.75;
+}
+
+.menu>a {
+    display: inline-block;
+    min-width: 2rem;
+    margin: 0 0.5rem;
+    text-decoration: none;
+    font-size: 0.75rem;
+    vertical-align: text-top;
+    color: #8f8e94;
+}
+
+.menu>a:first-child {
+    margin-left: 0.75rem;
+}
+
+.menu>a:hover,
+.menu>a.active-link {
+    color: #75747b;
+}

@@ -14,6 +14,9 @@ export default function Exercise(props) {
                 <li>
                     <Link to="/exercise/css3">css3</Link>
                 </li>
+                <li>
+                    <Link to="/exercise/html5">html5</Link>
+                </li>
             </ol>
         </div>
     )

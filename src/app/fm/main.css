@@ -1,0 +1,37 @@
+.main .player {
+    height: 80vh;
+}
+
+.main .menu {
+    height: 20vh;
+}
+
+@keyframes expand-player {
+    0% {
+        height: 20vh;
+    }
+
+    100% {
+        height: 80vh;
+    }
+}
+
+.main .player-expand {
+    animation: expand-player .5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes shrink-player {
+    0% {
+        height: 80vh;
+    }
+
+    100% {
+        height: 20vh;
+    }
+}
+
+.main .player-shrink {
+    animation: shrink-player .5s;
+    animation-fill-mode: forwards;
+}
