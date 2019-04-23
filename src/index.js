@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 // import { element } from './app/exercise/jsx';
 // import OfficialDoc from './app/exercise/official-doc/main';
 import './index.css';
@@ -15,7 +15,7 @@ import * as serviceWorker from './serviceWorker';
 // ReactDOM.render(<OfficialDoc />, document.getElementById('root'));
 ReactDOM.render((
     <BrowserRouter>
-        <Route path="/" component={App} />
+        <App />
     </BrowserRouter>
 ), document.getElementById('root'));
 

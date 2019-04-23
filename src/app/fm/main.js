@@ -47,14 +47,15 @@ export default class FM extends React.Component {
     }
 
     render() {
+        const parentUrl = this.props.match.url || 'fm';
         return (
             <section className="main">
-                <Player onTogglePlayer={this.togglePlayer} playerExpanded={this.state.playerExpanded}  />
+                <Player onTogglePlayer={this.togglePlayer} playerExpanded={this.state.playerExpanded} />
                 <Menu onTogglePlayer={this.togglePlayer} />
-                <Route path="/fm/hz" component={Hz} />
-                <Route path="/fm/songlist" component={SongList} />
-                <Route path="/fm/mine" component={Mine} />
-                <Route path="/fm/search" component={Search} />
+                <Route path={parentUrl + '/hz'} component={Hz} />
+                <Route path={parentUrl + '/songlist'} component={SongList} />
+                <Route path={parentUrl + '/mine'} component={Mine} />
+                <Route path={parentUrl + '/search'} component={Search} />
             </section>
         )
     }

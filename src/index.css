@@ -19,11 +19,6 @@ body {
   /* min-height: 420px; */
 }
 
-/* 不显示滚动条 */
-::-webkit-scrollbar {
-  display: none;
-}
-
 code {
   font-family: 'source code pro', Menlo, Monaco, Consolas, "Courier New",
     monospace;

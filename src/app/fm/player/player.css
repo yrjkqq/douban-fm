@@ -1,3 +1,51 @@
 .player {
     background-color: #f9f9f9;
+    color: #8f8e94;
+    font-size: 0.75rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.player a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.player-row svg {
+    vertical-align: text-bottom;
+}
+
+.player-row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 0;
+    line-height: 0;
+}
+
+.fm-logo {
+    width: 20%;
+    text-align: right;
+    padding-right: 2rem;
+    box-sizing: border-box;
+}
+
+.feedback {
+    width: 60%;
+    text-align: left;
+}
+
+.login {
+    width: 20%;
+    text-align: left;
+}
+
+.scan-img>p {
+    line-height: 0.8;
+}
+
+.scan-img {
+    width: 30%;
+    text-align: center;
 }

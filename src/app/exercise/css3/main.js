@@ -2,6 +2,7 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 import React from 'react';
 import './main.css';
+import ScrollToTop from '../../common/ScrollToTop';
 
 export default class CSS3 extends React.Component {
 
@@ -347,6 +348,7 @@ export default class CSS3 extends React.Component {
                         </ul>
                     </div>
                 </div>
+                <ScrollToTop />
             </div>
         );
     }

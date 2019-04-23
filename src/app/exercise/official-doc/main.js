@@ -7,6 +7,7 @@ import { Blog, doubled, listItems, NumberList, posts } from './list';
 import * as search from './search';
 import * as searchV1 from './search-v1';
 import * as stateLift from './state-lift';
+import ScrollToTop from '../../common/ScrollToTop';
 
 
 function OfficialDoc() {
@@ -88,6 +89,7 @@ function OfficialDoc() {
                     <searchV1.FilterableProductTable products={searchV1.PRODUCTS} />
                 </div>
             </div>
+            <ScrollToTop />
         </div>
     )
 }

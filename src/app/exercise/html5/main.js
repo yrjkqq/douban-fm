@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './main.css';
+import ScrollToTop from '../../common/ScrollToTop';
 
 function loadSyncImg(url) {
     return new Promise((resolve, reject) => {
@@ -424,7 +425,7 @@ class Html5 extends Component {
                     <p>Posted by: li</p>
                     <p><time pubdate="2020-03-02" dateTime="2020-03-01">到期时间</time></p>
                 </footer>
-
+                <ScrollToTop />
             </div>
         )
     }
