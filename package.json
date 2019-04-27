@@ -3,13 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "antd": "^3.16.6",
-    "babel-plugin-import": "^1.11.0",
     "cross-fetch": "^3.0.2",
-    "customize-cra": "^0.2.12",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
-    "react-app-rewired": "^2.1.3",
     "react-dom": "^16.8.6",
     "react-redux": "^7.0.2",
     "react-router-dom": "^5.0.0",
