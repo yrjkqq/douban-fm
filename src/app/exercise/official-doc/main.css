@@ -1,0 +1,95 @@
+.section {
+    font-family: 'source code pro', Menlo, Monaco, Consolas, "Courier New",
+        monospace;
+    border-bottom: 1px solid green;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section>div {
+    /* width: 20%; */
+    flex-grow: 1;
+    border: 1px solid green;
+    padding-left: 1rem;
+}
+
+.warning {
+    color: red;
+}
+
+.FancyBorder {
+    padding: 10px 10px;
+    border: 10px solid;
+}
+
+.FancyBorder-blue {
+    border-color: blue;
+}
+
+.Dialog-title {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.Dialog-message {
+    font-size: larger;
+}
+
+.SplitPane {
+    width: 100%;
+    height: 100%;
+}
+
+.SplitPane-left {
+    float: left;
+    width: 30%;
+    height: 100%;
+}
+
+.SplitPane-right {
+    float: left;
+    width: 70%;
+    height: 100%;
+}
+
+.Contacts {
+    width: 100%;
+    height: 100%;
+    background: lightblue;
+}
+
+.Chat {
+    width: 100%;
+    height: 100%;
+    background: pink;
+}
+
+.ProductRow>div {
+    display: inline-block;
+    width: 45%;
+}
+
+.ProductRow-red {
+    color: red;
+}
+
+/* .ProductRow-red>div:first-child {
+    font-weight: bold;
+  } */
+
+.ProductCategoryRow {
+    font-weight: bold;
+}
+
+.ProductTable {
+    font-weight: bold;
+}
+
+.ProductTable>div {
+    display: inline-block;
+    width: 25%;
+}
+
+.SearchBar>label {
+    display: block;
+}

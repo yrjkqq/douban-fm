@@ -8,6 +8,7 @@ import * as search from './search';
 import * as searchV1 from './search-v1';
 import * as stateLift from './state-lift';
 import ScrollToTop from '../../common/ScrollToTop';
+import './main.css';
 
 
 function OfficialDoc() {

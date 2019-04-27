@@ -68,6 +68,7 @@
     2. 使用 es6 语法（后期可以考虑使用 ts 重构）
     3. 后端使用 express web 应用框架
     4. 数据库使用 mysql（前期先使用 mock.js 模拟接口）
+    5. 使用服务端渲染技术，优化用户体验
 
 ## 时间规划
 
@@ -79,5 +80,10 @@
 
 ## tricks
 
-1. 解决跨域问题：create-my-app 创建的 package.json 文件中添加 ` "proxy": "http://localhost:3030/" ` 即可将 api 请求代理到 end 上，详见[官方指南](https://facebook.github.io/create-react-app/docs/proxying-api-requests-in-development)
-2. 鼠标滚动时间，使用 onWheel 事件， event.deltaY < 0 表示鼠标滚轮向前滚动
+1. 解决跨域问题：create-my-app 创建的 package.json 文件中添加 `"proxy": "http://localhost:3030/"` 即可将 api 请求代理到 end 上，详见[官方指南](https://facebook.github.io/create-react-app/docs/proxying-api-requests-in-development)
+2. 鼠标滚动时间，使用 `onWheel` 事件， `event.deltaY < 0` 表示鼠标滚轮向前滚动
+3. 使用 antd 官方指南引入到项目中，按需加载样式
+    - 按需加载的样式会覆盖在 `index.css` 中对 `html, body` 等 html 元素的设置
+    - 完全不使用 antd 组件则不会引入任何样式
+4. 使用 antd 则修改启动方式
+    - `react-app-rewired start`

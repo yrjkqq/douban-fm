@@ -8,6 +8,7 @@ import Search from './search/Search';
 import SongList from './song-list/SongList';
 import './main.css';
 
+// eslint-disable-next-line no-unused-vars
 class ArtistList extends React.Component {
 
     componentDidMount() {
