@@ -87,3 +87,8 @@
     - 完全不使用 antd 组件则不会引入任何样式
 4. 使用 antd 则修改启动方式
     - `react-app-rewired start`
+5. 使用 npx 命令调用 `create-react-app` 创建 react 应用
+    - npx 命令是对 npm 命令的封装，可以直接调用当前应用下 `node_modules` 下 `./bin` 下的命令
+    - npx 调用的命令模块不存在，会立即下载到临时目录，使用完会被删除；不会安装到全局依赖中
+6. 使用 CSS_Module 技术进行 css 处理，参考 `create-react-app` 官方文档，可以避免多个文件中的相同类名冲突；也可以引入 scss 文件，不过需要安装 `node-sass` 依赖
+7. more

@@ -1,6 +1,6 @@
 # 后端
 
-使用 express 作为应用框架
+使用 express 作为 nodejs 后端服务框架，提供 api 服务
 
 
 ## tricks
