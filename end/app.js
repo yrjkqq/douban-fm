@@ -21,9 +21,10 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 // 各模块单独划分路由
-app.use('/cart', cartRouter);
-app.use('/msg', msgRouter);
-app.use('/', apiRouter);
+const apiPrefix = '/index.php/web';
+app.use(apiPrefix + '/cart', cartRouter);
+app.use(apiPrefix + '/msg', msgRouter);
+app.use(apiPrefix + '/', apiRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -32,4 +32,14 @@ router.get('/publickey', function(req, res, next) {
   });
 });
 
+router.post('/platform/sendMsg', function(rea, res, next) {
+  res.send({
+    code: 0,
+    data: {
+      status: 'ok'
+    },
+    message: ''
+  });
+});
+
 module.exports = router;
