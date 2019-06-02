@@ -10,6 +10,9 @@ var msgRouter = require('./routes/msg');
 var goodsRouter = require('./routes/goods');
 var platformRouter = require('./routes/platform');
 var loginRouter = require('./routes/login');
+var memberRouter = require('./routes/member');
+var uploadRouter = require('./routes/upload');
+var orderRouter = require('./routes/order');
 
 var app = express();
 
@@ -30,6 +33,9 @@ app.use(apiPrefix + '/msg', msgRouter);
 app.use(apiPrefix + '/goods', goodsRouter);
 app.use(apiPrefix + '/Platform', platformRouter);
 app.use(apiPrefix + '/login', loginRouter);
+app.use(apiPrefix + '/member', memberRouter);
+app.use(apiPrefix + '/upload', uploadRouter);
+app.use(apiPrefix + '/order', orderRouter);
 
 app.use(apiPrefix + '/', apiRouter);
 
